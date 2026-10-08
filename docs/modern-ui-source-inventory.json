@@ -1,0 +1,1706 @@
+{
+  "purpose": "Source discovery baseline for UI modernization; not a completed behavior or feature audit.",
+  "baseline_date": "2026-10-08",
+  "reference_revisions": {
+    "pve-manager": "ac0c87dd37115e3046cbfa5756f2a02fc659e8cd",
+    "proxmox-widget-toolkit": "b92a9ad19f18065576e02ad0056c5ba5650bcf07",
+    "proxmox-yew-widget-toolkit": "4791dd9e38846e42866cabff955fce3f69175604",
+    "pve-yew-mobile-gui": "0889b25b46b2a9a5d883f7550dfb9748767a58f0",
+    "proxmox-e2e-tests": "1420155724ddf88b59e592509140db68f571a5ec"
+  },
+  "desktop_javascript_file_count": 376,
+  "desktop_javascript_line_count": 74559,
+  "counts_by_source_family": {
+    "(root)": 7,
+    "button": 3,
+    "ceph": 14,
+    "container": 1,
+    "controller": 1,
+    "data": 3,
+    "dc": 45,
+    "form": 79,
+    "grid": 7,
+    "ha": 13,
+    "lxc": 15,
+    "menu": 2,
+    "node": 12,
+    "panel": 14,
+    "pool": 3,
+    "qemu": 40,
+    "sdn": 64,
+    "storage": 21,
+    "tree": 4,
+    "window": 28
+  },
+  "navigation_anchors": [
+    {
+      "source": "www/manager6/dc/Config.js",
+      "literal_item_ids": [
+        "summary",
+        "notes",
+        "cluster",
+        "ceph",
+        "options",
+        "storage",
+        "backup",
+        "replication",
+        "permissions",
+        "users",
+        "apitokens",
+        "tfa",
+        "groups",
+        "pools",
+        "roles",
+        "domains",
+        "ha",
+        "ha-rules",
+        "ha-fencing",
+        "sdn",
+        "sdnzone",
+        "sdnvnet",
+        "sdnoptions",
+        "sdnmappings",
+        "sdnfirewall",
+        "sdnfabrics",
+        "sdnroutemaps",
+        "sdnprefixlists",
+        "acme",
+        "firewall",
+        "firewall-options",
+        "firewall-sg",
+        "firewall-aliases",
+        "firewall-ipset",
+        "metricservers",
+        "resources",
+        "directories",
+        "cputypes",
+        "notification-targets",
+        "support"
+      ],
+      "note": "Literal IDs include action controls and conditional/nested pages; this is not a route count."
+    },
+    {
+      "source": "www/manager6/node/Config.js",
+      "literal_item_ids": [
+        "summary",
+        "notes",
+        "jsconsole",
+        "services",
+        "network",
+        "certificates",
+        "dns",
+        "hosts",
+        "options",
+        "time",
+        "syslog",
+        "apt",
+        "aptrepositories",
+        "firewall",
+        "firewall-options",
+        "storage",
+        "lvm",
+        "lvmthin",
+        "directory",
+        "zfs",
+        "ceph",
+        "ceph-config",
+        "ceph-monlist",
+        "ceph-osdtree",
+        "ceph-cephfspanel",
+        "ceph-pools",
+        "replication",
+        "firewall-fwlog",
+        "ceph-log",
+        "tasks",
+        "support"
+      ],
+      "note": "Literal IDs include action controls and conditional/nested pages; this is not a route count."
+    },
+    {
+      "source": "www/manager6/qemu/Config.js",
+      "literal_item_ids": [
+        "removeBtn",
+        "summary",
+        "console",
+        "hardware",
+        "cloudinit",
+        "options",
+        "tasks",
+        "monitor",
+        "backup",
+        "replication",
+        "snapshot",
+        "firewall",
+        "firewall-options",
+        "firewall-aliases",
+        "firewall-ipset",
+        "firewall-fwlog",
+        "permissions"
+      ],
+      "note": "Literal IDs include action controls and conditional/nested pages; this is not a route count."
+    },
+    {
+      "source": "www/manager6/lxc/Config.js",
+      "literal_item_ids": [
+        "removeBtn",
+        "summary",
+        "consolejs",
+        "resources",
+        "network",
+        "dns",
+        "options",
+        "tasks",
+        "backup",
+        "replication",
+        "snapshot",
+        "firewall",
+        "firewall-options",
+        "firewall-aliases",
+        "firewall-ipset",
+        "firewall-fwlog",
+        "permissions"
+      ],
+      "note": "Literal IDs include action controls and conditional/nested pages; this is not a route count."
+    },
+    {
+      "source": "www/manager6/pool/Config.js",
+      "literal_item_ids": [
+        "summary",
+        "members",
+        "permissions"
+      ],
+      "note": "Literal IDs include action controls and conditional/nested pages; this is not a route count."
+    },
+    {
+      "source": "www/manager6/storage/Browser.js",
+      "literal_item_ids": [
+        "summary",
+        "contentBackup",
+        "contentImages",
+        "contentRootdir",
+        "contentIso",
+        "contentVztmpl",
+        "contentSnippets",
+        "contentImport",
+        "permissions"
+      ],
+      "note": "Literal IDs include action controls and conditional/nested pages; this is not a route count."
+    },
+    {
+      "source": "www/manager6/sdn/Browser.js",
+      "literal_item_ids": [
+        "content",
+        "permissions",
+        "ip-vrf",
+        "mac-vrfs"
+      ],
+      "note": "Literal IDs include action controls and conditional/nested pages; this is not a route count."
+    }
+  ],
+  "desktop_javascript_sources": [
+    {
+      "path": "www/manager6/Parser.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/StateProvider.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/Toolkit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/UIOptions.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/Utils.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/VNCConsole.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/Workspace.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/button/ConsoleButton.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/button/Revert.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/button/Split.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ceph/CephInstallWizard.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ceph/Config.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ceph/Crush.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ceph/FS.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ceph/HealthMute.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ceph/Log.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ceph/Monitor.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ceph/OSD.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ceph/OSDDetails.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ceph/Pool.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ceph/ServiceList.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ceph/Services.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ceph/Status.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ceph/StatusDetail.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/container/TwoColumnContainer.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/controller/StorageEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/data/PermPathStore.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/data/ResourceStore.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/data/model/RRDModels.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/ACLView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/ACMEClusterView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/AuthEditAD.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/AuthEditBase.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/AuthEditLDAP.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/AuthEditOpenId.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/AuthView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/Backup.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/BackupJobDetail.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/CPUTypeEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/CPUTypeView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/Cluster.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/ClusterEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/CmdMenu.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/Config.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/CorosyncLinkEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/DirMapView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/GroupEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/GroupView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/Guests.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/Health.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/Log.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/MetricServerView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/NodeView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/OptionView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/PCIMapView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/PermissionView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/PoolEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/PoolView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/RealmSyncJob.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/RegisteredTagsEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/RoleEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/RoleView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/SecurityGroups.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/StorageView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/Summary.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/Support.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/SyncWindow.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/Tasks.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/TokenEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/TokenView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/USBMapView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/UserEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/UserTagAccessEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/dc/UserView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/ACMEAPISelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/ACMEAccountSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/ACMEPluginSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/AgentFeatureSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/BackupCompressionSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/BackupModeSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/BandwidthSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/BridgeSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/BusTypeSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/CPUModelSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/CRSOptions.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/CacheTypeSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/CalendarEvent.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/CephFSSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/CephPoolSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/ComboBoxSetStoreNode.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/ContentTypeSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/ControllerSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/DayOfWeekSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/DirMapSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/DiskFormatSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/DiskStorageSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/FileSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/FilteredKVComboBox.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/FirewallPolicySelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/GlobalSearchField.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/GroupSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/GuestIDSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/HashAlgorithmSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/HotplugFeatureSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/IPProtocolSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/IPRefSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/IsoSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/ListField.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/MDevSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/MemoryField.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/MultiFileButton.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/MultiPCISelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/NetworkCardSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/NodeSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/NotificationModeSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/NotificationPolicySelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/NotificationTargetSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/PCIMapSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/PCISelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/PermPathSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/PhysBitsSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/PoolSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/PreallocationSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/PrivilegesSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/QemuBiosSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/QemuMachineSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/RecordSearchField.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/SDNControllerSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/SDNDnsSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/SDNIpamSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/SDNVnetSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/SDNZoneSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/ScsiHwSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/SecurityGroupSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/SnapshotSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/SpiceEnhancementSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/StorageScanNodeSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/StorageSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/TFASelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/Tag.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/TagColorGrid.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/TagEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/TagFieldSet.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/TokenSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/USBMapSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/USBSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/UserSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/VLanField.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/VMCPUFlagSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/VMSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/VNCKeyboardSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/ViewSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/form/iScsiProviderSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/grid/BackupView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/grid/FirewallAliases.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/grid/FirewallOptions.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/grid/FirewallRules.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/grid/PoolMembers.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/grid/Replication.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/grid/ResourceGrid.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ha/Fencing.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ha/NodePrioritySelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ha/ResourceEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ha/Resources.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ha/RuleEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ha/RuleErrorsModal.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ha/Rules.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ha/Status.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ha/StatusView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ha/rules/NodeAffinityRuleEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ha/rules/NodeAffinityRules.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ha/rules/ResourceAffinityRuleEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/ha/rules/ResourceAffinityRules.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/lxc/CmdMenu.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/lxc/Config.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/lxc/CreateWizard.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/lxc/DNS.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/lxc/DeviceEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/lxc/EnvEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/lxc/FeaturesEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/lxc/IdMapField.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/lxc/MPEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/lxc/MPResize.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/lxc/MultiMPEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/lxc/Network.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/lxc/Options.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/lxc/ResourceEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/lxc/Resources.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/menu/MenuItem.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/menu/TemplateMenu.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/node/ACME.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/node/Certificates.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/node/CmdMenu.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/node/Config.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/node/Directory.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/node/LVM.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/node/LVMThin.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/node/NodeOptionsView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/node/StatusView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/node/Subscription.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/node/Summary.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/node/ZFS.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/panel/BackupAdvancedOptions.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/panel/BackupJobPrune.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/panel/BackupNotificationOptions.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/panel/ConfigPanel.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/panel/GuestStatusView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/panel/GuestSummary.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/panel/HealthWidget.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/panel/IPSet.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/panel/IPView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/panel/MultiDiskEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/panel/RunningChart.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/panel/StatusPanel.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/panel/TagConfig.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/panel/TemplateStatusView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/pool/Config.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/pool/StatusView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/pool/Summary.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/Architecture.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/AudioEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/BootOrderEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/CDEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/CIDriveEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/CloudInit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/CmdMenu.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/Config.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/CreateWizard.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/DisplayEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/HDEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/HDEfi.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/HDMove.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/HDResize.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/HDTPM.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/HardwareView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/IPConfigEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/KeyboardEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/MachineEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/MemoryEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/Monitor.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/MultiHDEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/NetworkEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/OSDefaults.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/OSPanel.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/OSTypeEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/Options.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/PCIEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/ProcessorEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/QemuBiosEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/RNGEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/SSHKey.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/ScsiHwEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/SerialEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/SevEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/Smbios1Edit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/SystemEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/TdxEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/USBEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/qemu/VirtiofsEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/Browser.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/ControllerView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/DnsView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/EvpnZoneIpVrfPanel.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/EvpnZoneMacVrfPanel.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/FabricsContentView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/FabricsView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/FirewallPanel.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/FirewallVnetView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/IpamEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/IpamView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/NetworkBrowser.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/OptionsPanel.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/PrefixListPanel.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/PrefixListSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/RouteMapPanel.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/RouteMapSelector.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/SdnDiffView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/Status.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/StatusView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/SubnetEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/SubnetView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/VnetACLView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/VnetEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/VnetPanel.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/VnetView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/ZoneBridgeView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/ZoneBridgesPanel.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/ZoneContentPanel.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/ZoneContentView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/ZoneView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/controllers/Base.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/controllers/BgpEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/controllers/EvpnEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/controllers/IsisEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/dns/Base.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/dns/PowerdnsEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/fabrics/Common.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/fabrics/FabricEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/fabrics/InterfacePanel.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/fabrics/NodeEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/fabrics/RedistributionGrid.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/fabrics/bgp/FabricEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/fabrics/bgp/InterfacePanel.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/fabrics/bgp/NodeEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/fabrics/openfabric/FabricEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/fabrics/openfabric/InterfacePanel.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/fabrics/openfabric/NodeEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/fabrics/ospf/FabricEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/fabrics/ospf/InterfacePanel.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/fabrics/ospf/NodeEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/fabrics/wireguard/FabricEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/fabrics/wireguard/InterfacePanel.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/fabrics/wireguard/NodeEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/ipams/Base.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/ipams/NetboxEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/ipams/PVEIpamEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/ipams/PhpIpamEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/zones/Base.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/zones/EvpnEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/zones/QinQEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/zones/SimpleEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/zones/VlanEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/sdn/zones/VxlanEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/storage/BTRFSEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/storage/BackupView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/storage/Base.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/storage/Browser.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/storage/CIFSEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/storage/CephFSEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/storage/ContentView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/storage/DirEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/storage/ESXIEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/storage/IScsiEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/storage/ImageView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/storage/LVMEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/storage/LvmThinEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/storage/NFSEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/storage/PBSEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/storage/RBDEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/storage/StatusView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/storage/Summary.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/storage/TemplateView.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/storage/ZFSEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/storage/ZFSPoolEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/tree/DhcpTree.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/tree/ResourceMapTree.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/tree/ResourceTree.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/tree/SnapshotTree.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/Backup.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/BackupConfig.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/BulkAction.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/CephInstall.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/Clone.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/ConfirmRemoveResource.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/DirMapEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/DownloadUrlToStorage.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/FirewallEnableEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/FirewallLograteEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/GuestDiskReassign.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/GuestImport.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/GuestStop.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/LoginWindow.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/Migrate.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/PCIMapEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/Prune.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/Restore.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/SafeDestroyGuest.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/SafeDestroyStorage.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/ScheduleSimulator.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/Settings.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/Snapshot.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/StartupEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/TreeSettingsEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/USBMapEdit.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/UploadToStorage.js",
+      "audit_status": "not_assessed"
+    },
+    {
+      "path": "www/manager6/window/Wizard.js",
+      "audit_status": "not_assessed"
+    }
+  ]
+}
